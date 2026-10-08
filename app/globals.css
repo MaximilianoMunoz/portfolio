@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #fafaf8;
+  --surface: #ffffff;
+  --surface-muted: #f3f2ef;
+  --foreground: #141414;
+  --muted: #5d5d5a;
+  --border: #e6e4df;
+  /* Accent used for text, icons and details. */
+  --accent: #c0392b;
+  /* Accent used as a solid background (buttons). Same in both themes for contrast with white text. */
+  --accent-solid: #c0392b;
+  --accent-solid-hover: #a93226;
+  --accent-soft: rgb(192 57 43 / 0.08);
+  --grid-line: rgb(20 20 20 / 0.05);
+}
+
+.dark {
+  --background: #0b0b0c;
+  --surface: #131315;
+  --surface-muted: #1a1a1d;
+  --foreground: #ededec;
+  --muted: #a1a19c;
+  --border: #26262a;
+  --accent: #e5533f;
+  --accent-solid: #c0392b;
+  --accent-solid-hover: #d14334;
+  --accent-soft: rgb(229 83 63 / 0.12);
+  --grid-line: rgb(255 255 255 / 0.045);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-solid: var(--accent-solid);
+  --color-accent-solid-hover: var(--accent-solid-hover);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--accent-solid);
+  color: #fff;
+}
+
+/* Subtle background grid used behind the hero. */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+/* Scroll reveal: elements with [data-reveal] fade in once they enter the viewport.
+   Hidden state only applies when JS is running (html.js), so content is never lost. */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+html.js [data-reveal][data-visible] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  html.js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

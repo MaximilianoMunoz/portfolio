@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Maximiliano Muñoz López — Senior Flutter Developer",
+    "description": "I build iOS and Android apps with Flutter, from idea to app store. Almost 7 years of experience shipping products for the US and Mexico.",
+    "ogAlt": "Maximiliano Muñoz López, Senior Flutter Developer"
+  },
+  "nav": {
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Let's talk",
+    "skip": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Change language",
+    "theme": "Toggle theme"
+  },
+  "hero": {
+    "badge": "Available for freelance projects",
+    "role": "Senior Flutter Developer",
+    "tagline": "I build mobile apps for iOS and Android, from idea to app store.",
+    "ctaPrimary": "Contact me",
+    "ctaSecondary": "View projects",
+    "stats": [
+      { "value": "~7", "label": "years of experience" },
+      { "value": "5+", "label": "years building for the US" },
+      { "value": "4,400+", "label": "BuzzStar downloads" },
+      { "value": "#1", "label": "National Hackatec champion" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "What I can build for your business",
+    "intro": "I handle the whole process: product, technical design, development, testing and release on the App Store and Google Play.",
+    "items": [
+      {
+        "title": "Mobile apps from scratch",
+        "description": "Native iOS and Android apps from a single Flutter codebase. Clean architecture, ready to scale and published on the stores."
+      },
+      {
+        "title": "Improvement & maintenance",
+        "description": "I rescue, optimize and maintain existing apps: performance, stability, SDK upgrades and new features without breaking what already works."
+      },
+      {
+        "title": "Payments & video calls",
+        "description": "Stripe payment integrations and real-time video calls with Agora, proven in production with thousands of users."
+      },
+      {
+        "title": "Websites & e-commerce",
+        "description": "Fast websites and online stores built with Next.js, optimized for SEO and for turning visitors into customers."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Products I've taken to production",
+    "intro": "A selection of apps and sites I've worked on, from the first commit to the store.",
+    "role": "Role",
+    "links": {
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "website": "Visit site"
+    },
+    "imageAlt": "Screenshot of {name}",
+    "items": {
+      "buzzstar": {
+        "name": "BuzzStar",
+        "category": "Video calls · Creators",
+        "description": "Real-time video calls between content creators and their fans. I implemented Stripe payments and performance improvements.",
+        "role": "Flutter Developer",
+        "highlight": "4,400+ downloads"
+      },
+      "parlor": {
+        "name": "Parlor Games",
+        "category": "Sports · Predictions",
+        "description": "Prediction games for NFL, NBA and NCAA matches with real-time scores.",
+        "role": "Flutter Developer",
+        "highlight": "From scratch to store"
+      },
+      "kiiwi": {
+        "name": "Kiiwi",
+        "category": "Local commerce · Deals",
+        "description": "Last-minute deals at local businesses.",
+        "role": "Flutter Developer",
+        "highlight": "From scratch to store"
+      },
+      "carmessie": {
+        "name": "Carmessie Velvet",
+        "category": "E-commerce · Fashion",
+        "description": "Mexican fashion e-commerce with pre-order sales.",
+        "role": "Project lead & frontend",
+        "highlight": "Live in production"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "Solid engineering, focused on the product",
+    "photoAlt": "Photo of Maximiliano Muñoz López",
+    "paragraphs": [
+      "I'm a mobile developer with almost 7 years of experience, more than 5 of them building products for the US market. I enjoy taking an idea and turning it into a stable, fast app that's ready to grow.",
+      "I work with Clean Architecture, Riverpod and BLoC, write tests, and automate builds and releases with CI/CD (Codemagic, Fastlane and GitHub Actions).",
+      "I use Claude Code with agents and skills to speed up development without compromising code quality."
+    ],
+    "award": {
+      "label": "Achievement",
+      "title": "ENEIT Hackatec 2019 national champion",
+      "description": "Led the team that built an app for General Motors in 48 hours."
+    },
+    "stackTitle": "Tech stack"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Have a project in mind?",
+    "intro": "Tell me about your idea and I'll get back to you with a proposal for next steps.",
+    "whatsapp": "Message me on WhatsApp",
+    "whatsappMessage": "Hi Maximiliano, I saw your website and I'm interested in a project",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cv": "Download résumé (PDF)",
+    "copy": "Copy email",
+    "copied": "Copied!"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built": "Built with Next.js and Tailwind CSS.",
+    "backToTop": "Back to top"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has moved.",
+    "back": "Back to home"
+  }
+}

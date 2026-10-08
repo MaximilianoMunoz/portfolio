@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Maximiliano Muñoz López — Senior Flutter Developer",
+    "description": "Desarrollo apps móviles para iOS y Android con Flutter, desde la idea hasta la tienda. Casi 7 años de experiencia creando productos para Estados Unidos y México.",
+    "ogAlt": "Maximiliano Muñoz López, Senior Flutter Developer"
+  },
+  "nav": {
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "cta": "Hablemos",
+    "skip": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "language": "Cambiar idioma",
+    "theme": "Cambiar tema"
+  },
+  "hero": {
+    "badge": "Disponible para proyectos freelance",
+    "role": "Senior Flutter Developer",
+    "tagline": "Desarrollo apps móviles para iOS y Android, desde la idea hasta la tienda.",
+    "ctaPrimary": "Contáctame",
+    "ctaSecondary": "Ver proyectos",
+    "stats": [
+      { "value": "~7", "label": "años de experiencia" },
+      { "value": "+5", "label": "años en productos para EE. UU." },
+      { "value": "+4,400", "label": "descargas en BuzzStar" },
+      { "value": "#1", "label": "Campeón nacional Hackatec" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Lo que puedo construir para tu negocio",
+    "intro": "Me encargo del proceso completo: producto, diseño técnico, desarrollo, pruebas y publicación en App Store y Google Play.",
+    "items": [
+      {
+        "title": "Apps móviles desde cero",
+        "description": "Apps nativas para iOS y Android con un solo código en Flutter. Arquitectura limpia, lista para crecer y publicada en las tiendas."
+      },
+      {
+        "title": "Mejora y mantenimiento",
+        "description": "Rescato, optimizo y mantengo apps existentes: rendimiento, estabilidad, actualizaciones de SDK y nuevas funciones sin romper lo que ya funciona."
+      },
+      {
+        "title": "Pagos y videollamadas",
+        "description": "Integración de pagos con Stripe y videollamadas en tiempo real con Agora, probadas en producción con miles de usuarios."
+      },
+      {
+        "title": "Sitios web y e-commerce",
+        "description": "Sitios rápidos y tiendas en línea con Next.js, optimizados para SEO y para convertir visitas en clientes."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Productos que he llevado a producción",
+    "intro": "Una selección de apps y sitios en los que he participado, desde el primer commit hasta la tienda.",
+    "role": "Rol",
+    "links": {
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "website": "Visitar sitio"
+    },
+    "imageAlt": "Captura de {name}",
+    "items": {
+      "buzzstar": {
+        "name": "BuzzStar",
+        "category": "Videollamadas · Creadores",
+        "description": "Videollamadas en tiempo real entre creadores de contenido y sus fans. Implementé los pagos con Stripe y mejoras de rendimiento.",
+        "role": "Desarrollador Flutter",
+        "highlight": "+4,400 descargas"
+      },
+      "parlor": {
+        "name": "Parlor Games",
+        "category": "Deportes · Predicciones",
+        "description": "Juegos de predicción de partidos de NFL, NBA y NCAA con marcadores en tiempo real.",
+        "role": "Desarrollador Flutter",
+        "highlight": "De cero a la tienda"
+      },
+      "kiiwi": {
+        "name": "Kiiwi",
+        "category": "Comercio local · Ofertas",
+        "description": "Ofertas de último minuto en comercios locales.",
+        "role": "Desarrollador Flutter",
+        "highlight": "De cero a la tienda"
+      },
+      "carmessie": {
+        "name": "Carmessie Velvet",
+        "category": "E-commerce · Moda",
+        "description": "E-commerce de moda mexicana con venta en preventa.",
+        "role": "Líder de proyecto y frontend",
+        "highlight": "Sitio en producción"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Ingeniería sólida, enfocada en el producto",
+    "photoAlt": "Foto de Maximiliano Muñoz López",
+    "paragraphs": [
+      "Soy desarrollador móvil con casi 7 años de experiencia, más de 5 de ellos creando productos para el mercado de Estados Unidos. Me gusta tomar una idea y convertirla en una app estable, rápida y lista para crecer.",
+      "Trabajo con Clean Architecture, Riverpod y BLoC, escribo pruebas y automatizo builds y publicaciones con CI/CD (Codemagic, Fastlane y GitHub Actions).",
+      "Uso Claude Code con agentes y skills para acelerar el desarrollo, sin sacrificar la calidad del código."
+    ],
+    "award": {
+      "label": "Logro",
+      "title": "Campeón nacional ENEIT Hackatec 2019",
+      "description": "Lideré al equipo que desarrolló en 48 horas una app para General Motors."
+    },
+    "stackTitle": "Tecnologías"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "¿Tienes un proyecto en mente?",
+    "intro": "Cuéntame tu idea y te respondo con una propuesta de siguientes pasos.",
+    "whatsapp": "Escríbeme por WhatsApp",
+    "whatsappMessage": "Hola Maximiliano, vi tu sitio y me interesa un proyecto",
+    "email": "Correo",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cv": "Descargar CV (PDF)",
+    "copy": "Copiar correo",
+    "copied": "¡Copiado!"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "built": "Hecho con Next.js y Tailwind CSS.",
+    "backToTop": "Volver arriba"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o cambió de lugar.",
+    "back": "Volver al inicio"
+  }
+}
