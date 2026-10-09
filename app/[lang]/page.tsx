@@ -25,8 +25,11 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
     image: `${siteConfig.url}${siteConfig.photo}`,
     email: `mailto:${siteConfig.email}`,
     sameAs: [siteConfig.linkedin, siteConfig.github],
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "Tecnológico Nacional de México / Instituto Tecnológico de Toluca",
+    },
     knowsAbout: ["Flutter", "Dart", "iOS", "Android", "Firebase", "Stripe", "Agora", "Next.js", "React"],
-    award: t.about.award.title,
   };
 
   return (

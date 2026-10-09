@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Trophy } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { siteConfig, techStack } from "@/config/site";
 import type { Messages } from "@/lib/i18n";
 import { Container, reveal, SectionHeading } from "@/components/ui/primitives";
@@ -32,17 +32,14 @@ export function About({ t }: { t: Messages["about"] }) {
               ))}
             </div>
 
-            <div
-              className="mt-10 flex gap-5 rounded-2xl border border-accent/30 bg-accent-soft p-6"
-              {...reveal(120)}
-            >
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-accent-solid text-white">
-                <Trophy className="size-5" aria-hidden="true" />
+            <div className="mt-10 flex gap-5 rounded-2xl border border-border bg-surface p-6" {...reveal(120)}>
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <GraduationCap className="size-5" aria-hidden="true" />
               </span>
               <div>
-                <p className="font-mono text-xs tracking-wider text-accent uppercase">{t.award.label}</p>
-                <p className="mt-1 text-lg font-semibold tracking-tight">{t.award.title}</p>
-                <p className="mt-1 text-muted">{t.award.description}</p>
+                <p className="font-mono text-xs tracking-wider text-accent uppercase">{t.education.label}</p>
+                <p className="mt-1 text-lg font-semibold tracking-tight">{t.education.title}</p>
+                <p className="mt-1 text-muted">{t.education.school}</p>
               </div>
             </div>
 

@@ -19,12 +19,13 @@ export const siteConfig = {
   photo: "/me.jpg",
 } as const;
 
-export type ProjectId = "buzzstar" | "parlor" | "kiiwi" | "carmessie";
+export type ProjectId = "buzzstar" | "parlor" | "kiiwi" | "unwrap" | "inkedsports" | "carmessie";
 
 export type ProjectLinks = {
   appStore?: string;
   googlePlay?: string;
   website?: string;
+  instagram?: string;
 };
 
 /**
@@ -42,19 +43,31 @@ export const projects: {
     id: "buzzstar",
     image: "/projects/buzzstar.png",
     tech: ["Flutter", "Riverpod", "Agora SDK", "Stripe", "Firebase"],
-    links: { appStore: "", googlePlay: "" },
+    links: { appStore: "", googlePlay: "", instagram: "https://www.instagram.com/buzzstar/" },
   },
   {
     id: "parlor",
     image: "/projects/parlor.png",
     tech: ["Flutter", "Firebase"],
-    links: { appStore: "", googlePlay: "" },
+    links: { appStore: "", googlePlay: "", website: "https://www.parlorgames.com/" },
   },
   {
     id: "kiiwi",
     image: "/projects/kiiwi.png",
     tech: ["Flutter", "GetX", "REST", "Firebase"],
-    links: { appStore: "", googlePlay: "" },
+    links: { appStore: "", googlePlay: "", instagram: "https://www.instagram.com/kiiwi.app/" },
+  },
+  {
+    id: "unwrap",
+    image: "/projects/unwrap.png",
+    tech: ["Flutter", "GraphQL", "Firebase"],
+    links: { appStore: "https://apps.apple.com/us/app/unwrap-the-gift-giving-app/id6470533157" },
+  },
+  {
+    id: "inkedsports",
+    image: "/projects/inkedsports.png",
+    tech: ["Flutter", "BLoC", "GraphQL", "Firebase"],
+    links: { appStore: "", googlePlay: "", instagram: "https://www.instagram.com/inkedsports/" },
   },
   {
     id: "carmessie",

@@ -23,10 +23,22 @@
     "ctaPrimary": "Contáctame",
     "ctaSecondary": "Ver proyectos",
     "stats": [
-      { "value": "~7", "label": "años de experiencia" },
-      { "value": "+5", "label": "años en productos para EE. UU." },
-      { "value": "+4,400", "label": "descargas en BuzzStar" },
-      { "value": "#1", "label": "Campeón nacional Hackatec" }
+      {
+        "value": "~7",
+        "label": "años de experiencia"
+      },
+      {
+        "value": "+5",
+        "label": "años en productos para EE. UU."
+      },
+      {
+        "value": "+4,400",
+        "label": "descargas en BuzzStar"
+      },
+      {
+        "value": "iOS + Android",
+        "label": "con un solo código en Flutter"
+      }
     ]
   },
   "services": {
@@ -60,30 +72,45 @@
     "links": {
       "appStore": "App Store",
       "googlePlay": "Google Play",
-      "website": "Visitar sitio"
+      "website": "Visitar sitio",
+      "instagram": "Instagram"
     },
     "imageAlt": "Captura de {name}",
     "items": {
       "buzzstar": {
         "name": "BuzzStar",
         "category": "Videollamadas · Creadores",
-        "description": "Videollamadas en tiempo real entre creadores de contenido y sus fans. Implementé los pagos con Stripe y mejoras de rendimiento.",
+        "description": "Videollamadas en tiempo real entre creadores de contenido y sus fans. Implementé el flujo de pagos con Stripe, integré videollamadas de baja latencia con Agora y mejoré el rendimiento de la app en producción.",
         "role": "Desarrollador Flutter",
         "highlight": "+4,400 descargas"
       },
       "parlor": {
         "name": "Parlor Games",
         "category": "Deportes · Predicciones",
-        "description": "Juegos de predicción de partidos de NFL, NBA y NCAA con marcadores en tiempo real.",
+        "description": "Juegos de predicción de partidos de NFL, NBA y NCAA con marcadores en tiempo real. La desarrollé desde cero hasta su publicación en App Store y Google Play.",
         "role": "Desarrollador Flutter",
         "highlight": "De cero a la tienda"
       },
       "kiiwi": {
         "name": "Kiiwi",
         "category": "Comercio local · Ofertas",
-        "description": "Ofertas de último minuto en comercios locales.",
+        "description": "Ofertas de último minuto en comercios locales. La desarrollé desde cero y la publiqué en ambas tiendas.",
         "role": "Desarrollador Flutter",
         "highlight": "De cero a la tienda"
+      },
+      "unwrap": {
+        "name": "Unwrap",
+        "category": "Estilo de vida · Regalos",
+        "description": "Listas de regalos, eventos y grupos de amigos. Desarrollé y mantuve funcionalidades con GraphQL y Firebase para iOS y Android.",
+        "role": "Desarrollador Flutter",
+        "highlight": "iOS y Android"
+      },
+      "inkedsports": {
+        "name": "Inked Sports",
+        "category": "Deportes · Marcas",
+        "description": "Conecta a atletas universitarios de EE. UU. con marcas. Implementé la arquitectura con BLoC, consumí servicios GraphQL, integré Firebase y desplegué la app en iOS y Android.",
+        "role": "Desarrollador Flutter",
+        "highlight": "Atletas de EE. UU."
       },
       "carmessie": {
         "name": "Carmessie Velvet",
@@ -103,10 +130,10 @@
       "Trabajo con Clean Architecture, Riverpod y BLoC, escribo pruebas y automatizo builds y publicaciones con CI/CD (Codemagic, Fastlane y GitHub Actions).",
       "Uso Claude Code con agentes y skills para acelerar el desarrollo, sin sacrificar la calidad del código."
     ],
-    "award": {
-      "label": "Logro",
-      "title": "Campeón nacional ENEIT Hackatec 2019",
-      "description": "Lideré al equipo que desarrolló en 48 horas una app para General Motors."
+    "education": {
+      "label": "Formación",
+      "title": "Ingeniero en Tecnologías de la Información y Comunicaciones",
+      "school": "Tecnológico Nacional de México / Instituto Tecnológico de Toluca"
     },
     "stackTitle": "Tecnologías"
   },

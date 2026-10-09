@@ -23,10 +23,22 @@
     "ctaPrimary": "Contact me",
     "ctaSecondary": "View projects",
     "stats": [
-      { "value": "~7", "label": "years of experience" },
-      { "value": "5+", "label": "years building for the US" },
-      { "value": "4,400+", "label": "BuzzStar downloads" },
-      { "value": "#1", "label": "National Hackatec champion" }
+      {
+        "value": "~7",
+        "label": "years of experience"
+      },
+      {
+        "value": "5+",
+        "label": "years building for the US"
+      },
+      {
+        "value": "4,400+",
+        "label": "BuzzStar downloads"
+      },
+      {
+        "value": "iOS + Android",
+        "label": "from a single Flutter codebase"
+      }
     ]
   },
   "services": {
@@ -60,30 +72,45 @@
     "links": {
       "appStore": "App Store",
       "googlePlay": "Google Play",
-      "website": "Visit site"
+      "website": "Visit site",
+      "instagram": "Instagram"
     },
     "imageAlt": "Screenshot of {name}",
     "items": {
       "buzzstar": {
         "name": "BuzzStar",
         "category": "Video calls · Creators",
-        "description": "Real-time video calls between content creators and their fans. I implemented Stripe payments and performance improvements.",
+        "description": "Real-time video calls between content creators and their fans. I implemented the Stripe payment flow, integrated low-latency video calls with Agora and improved the production app's performance.",
         "role": "Flutter Developer",
         "highlight": "4,400+ downloads"
       },
       "parlor": {
         "name": "Parlor Games",
         "category": "Sports · Predictions",
-        "description": "Prediction games for NFL, NBA and NCAA matches with real-time scores.",
+        "description": "Prediction games for NFL, NBA and NCAA matches with real-time scoreboards. I built it from scratch through release on the App Store and Google Play.",
         "role": "Flutter Developer",
         "highlight": "From scratch to store"
       },
       "kiiwi": {
         "name": "Kiiwi",
         "category": "Local commerce · Deals",
-        "description": "Last-minute deals at local businesses.",
+        "description": "Last-minute deals from local businesses. I built it from scratch and released it on both stores.",
         "role": "Flutter Developer",
         "highlight": "From scratch to store"
+      },
+      "unwrap": {
+        "name": "Unwrap",
+        "category": "Lifestyle · Gifting",
+        "description": "Gift lists, events and friend groups. I developed and maintained features with GraphQL and Firebase for iOS and Android.",
+        "role": "Flutter Developer",
+        "highlight": "iOS & Android"
+      },
+      "inkedsports": {
+        "name": "Inked Sports",
+        "category": "Sports · Brands",
+        "description": "Connects US college athletes with brands. I implemented a BLoC architecture, consumed GraphQL services, integrated Firebase and shipped the app to iOS and Android.",
+        "role": "Flutter Developer",
+        "highlight": "US college athletes"
       },
       "carmessie": {
         "name": "Carmessie Velvet",
@@ -103,10 +130,10 @@
       "I work with Clean Architecture, Riverpod and BLoC, write tests, and automate builds and releases with CI/CD (Codemagic, Fastlane and GitHub Actions).",
       "I use Claude Code with agents and skills to speed up development without compromising code quality."
     ],
-    "award": {
-      "label": "Achievement",
-      "title": "ENEIT Hackatec 2019 national champion",
-      "description": "Led the team that built an app for General Motors in 48 hours."
+    "education": {
+      "label": "Education",
+      "title": "B.S. in Information and Communication Technologies Engineering",
+      "school": "Tecnológico Nacional de México / Instituto Tecnológico de Toluca"
     },
     "stackTitle": "Tech stack"
   },

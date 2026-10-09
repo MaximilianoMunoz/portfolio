@@ -35,7 +35,7 @@ npm run lint       # revisa el código con ESLint
 
 Notas:
 - Si agregas una clave en `es.json`, agrégala también en `en.json`. TypeScript marca error si falta.
-- En `projects`, un enlace vacío (`""`) oculta su botón. Ejemplo:
+- En `projects`, cada proyecto acepta `appStore`, `googlePlay`, `website` e `instagram`. Un enlace vacío (`""`) oculta su botón. Ejemplo:
   ```ts
   links: { appStore: "https://apps.apple.com/app/id123", googlePlay: "https://play.google.com/store/apps/details?id=com.ejemplo" }
   ```
@@ -50,11 +50,13 @@ Todos viven en `public/`. Reemplázalos con un archivo **del mismo nombre**:
 | `public/projects/buzzstar.png` | Tarjeta de BuzzStar | 1600 × 1000 (16:10) |
 | `public/projects/parlor.png` | Tarjeta de Parlor Games | 1600 × 1000 (16:10) |
 | `public/projects/kiiwi.png` | Tarjeta de Kiiwi | 1600 × 1000 (16:10) |
+| `public/projects/unwrap.png` | Tarjeta de Unwrap | 1600 × 1000 (16:10) |
+| `public/projects/inkedsports.png` | Tarjeta de Inked Sports | 1600 × 1000 (16:10) |
 | `public/projects/carmessie.png` | Tarjeta de Carmessie Velvet | 1600 × 1000 (16:10) |
 | `public/me.jpg` | Tu foto en "Sobre mí" | 800 × 1000 (4:5) |
 | `public/cv-es.pdf` / `public/cv-en.pdf` | CV descargable según el idioma | — |
 
-Los archivos actuales son **placeholders**. `next/image` optimiza las imágenes automáticamente (AVIF/WebP y tamaños responsivos), así que puedes subirlas en buena calidad.
+Tu foto y tus CVs ya están puestos; las imágenes de proyectos siguen siendo **placeholders**. `next/image` optimiza las imágenes automáticamente (AVIF/WebP y tamaños responsivos), así que puedes subirlas en buena calidad.
 
 Si quieres usar otra extensión (por ejemplo `.webp`), cambia la ruta en `config/site.ts`.
 

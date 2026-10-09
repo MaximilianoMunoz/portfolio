@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { projects } from "@/config/site";
 import { format, type Messages } from "@/lib/i18n";
-import { AppleIcon, GooglePlayIcon } from "@/components/ui/brand-icons";
+import { AppleIcon, GooglePlayIcon, InstagramIcon } from "@/components/ui/brand-icons";
 import { buttonClasses, Container, reveal, SectionHeading, Tag } from "@/components/ui/primitives";
 
 export function Projects({ t }: { t: Messages["projects"] }) {
@@ -18,8 +18,8 @@ export function Projects({ t }: { t: Messages["projects"] }) {
         <ul className="grid gap-6 lg:grid-cols-2">
           {projects.map((project, i) => {
             const copy = t.items[project.id];
-            const { appStore, googlePlay, website } = project.links;
-            const hasLinks = Boolean(appStore || googlePlay || website);
+            const { appStore, googlePlay, website, instagram } = project.links;
+            const hasLinks = Boolean(appStore || googlePlay || website || instagram);
 
             return (
               <li
@@ -75,6 +75,12 @@ export function Projects({ t }: { t: Messages["projects"] }) {
                         <a href={website} target="_blank" rel="noopener noreferrer" className={buttonClasses("secondary")}>
                           {t.links.website}
                           <ArrowUpRight className="size-4" aria-hidden="true" />
+                        </a>
+                      ) : null}
+                      {instagram ? (
+                        <a href={instagram} target="_blank" rel="noopener noreferrer" className={buttonClasses("secondary")}>
+                          <InstagramIcon className="size-4" />
+                          {t.links.instagram}
                         </a>
                       ) : null}
                     </div>
