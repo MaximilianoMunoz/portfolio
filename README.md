@@ -1,101 +1,50 @@
-# Maximiliano Muñoz López — Portafolio
+# Maximiliano Muñoz López — Portfolio
 
-Sitio personal de portafolio y servicios. Una sola página, bilingüe (español / inglés), con modo claro y oscuro, 100% estático.
+Personal website and portfolio. Senior Flutter Developer building mobile apps for iOS and Android.
 
-- **Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · next-themes · lucide-react
-- **Rutas:** `/` → español (por defecto) · `/en` → inglés
-- **SEO:** metadata por idioma, `hreflang`, Open Graph/Twitter con imagen generada, JSON-LD (`Person`), `sitemap.xml` y `robots.txt`
+## Tech stack
 
-## Correr localmente
+- [Next.js 16](https://nextjs.org) (App Router) + TypeScript
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [next-themes](https://github.com/pacocoursey/next-themes) for light/dark mode
+- [lucide-react](https://lucide.dev) icons
 
-Requisitos: Node.js 20.9 o superior.
+## Features
+
+- Fully static: every page is prerendered at build time
+- Bilingual (Spanish / English) with JSON-based translations: `/` (es) and `/en`
+- Light and dark themes that follow the system preference
+- SEO: per-locale metadata, `hreflang`, generated Open Graph images, JSON-LD, sitemap and robots.txt
+- Subtle scroll animations that respect `prefers-reduced-motion`
+- Lighthouse 95+ across all categories
+
+## Getting started
 
 ```bash
 npm install
-npm run dev        # http://localhost:3000
+npm run dev
 ```
 
-Otros comandos:
+Other scripts: `npm run build`, `npm run start`, `npm run lint`.
 
-```bash
-npm run build      # compila la versión de producción
-npm run start      # sirve la versión compilada
-npm run lint       # revisa el código con ESLint
-```
+Set `NEXT_PUBLIC_SITE_URL` (see `.env.example`) to the production URL.
 
-## Editar el contenido
-
-| Qué quieres cambiar | Dónde |
-| --- | --- |
-| Cualquier texto del sitio | `messages/es.json` y `messages/en.json` (misma estructura en ambos) |
-| WhatsApp, correo, LinkedIn, GitHub, URL del sitio | `config/site.ts` → `siteConfig` |
-| Tecnologías y enlaces de cada proyecto (App Store, Google Play, sitio web) | `config/site.ts` → `projects` |
-| Lista de tecnologías de "Sobre mí" | `config/site.ts` → `techStack` |
-| Colores (acento rojo, fondos, bordes) | `app/globals.css` (variables en `:root` y `.dark`) |
-
-Notas:
-- Si agregas una clave en `es.json`, agrégala también en `en.json`. TypeScript marca error si falta.
-- En `projects`, cada proyecto acepta `appStore`, `googlePlay`, `website` e `instagram`. Un enlace vacío (`""`) oculta su botón. Ejemplo:
-  ```ts
-  links: { appStore: "https://apps.apple.com/app/id123", googlePlay: "https://play.google.com/store/apps/details?id=com.ejemplo" }
-  ```
-- El mensaje prellenado de WhatsApp está en `contact.whatsappMessage` de cada idioma.
-
-## Cambiar imágenes y archivos
-
-Todos viven en `public/`. Reemplázalos con un archivo **del mismo nombre**:
-
-| Archivo | Uso | Tamaño recomendado |
-| --- | --- | --- |
-| `public/projects/buzzstar.png` | Tarjeta de BuzzStar | 1600 × 1000 (16:10) |
-| `public/projects/parlor.png` | Tarjeta de Parlor Games | 1600 × 1000 (16:10) |
-| `public/projects/kiiwi.png` | Tarjeta de Kiiwi | 1600 × 1000 (16:10) |
-| `public/projects/unwrap.png` | Tarjeta de Unwrap | 1600 × 1000 (16:10) |
-| `public/projects/inkedsports.png` | Tarjeta de Inked Sports | 1600 × 1000 (16:10) |
-| `public/projects/carmessie.png` | Tarjeta de Carmessie Velvet | 1600 × 1000 (16:10) |
-| `public/me.jpg` | Tu foto en "Sobre mí" | 800 × 1000 (4:5) |
-| `public/cv-es.pdf` / `public/cv-en.pdf` | CV descargable según el idioma | — |
-
-Tu foto y tus CVs ya están puestos; las imágenes de proyectos siguen siendo **placeholders**. `next/image` optimiza las imágenes automáticamente (AVIF/WebP y tamaños responsivos), así que puedes subirlas en buena calidad.
-
-Si quieres usar otra extensión (por ejemplo `.webp`), cambia la ruta en `config/site.ts`.
-
-La imagen que se ve al compartir el link (Open Graph) se genera sola desde `app/[lang]/opengraph-image.tsx`.
-
-## Estructura
+## Project structure
 
 ```
 app/
-  [lang]/layout.tsx           # <html lang>, fuentes, tema, metadata
-  [lang]/page.tsx             # arma las secciones + JSON-LD
-  [lang]/opengraph-image.tsx  # imagen para WhatsApp/LinkedIn
-  global-not-found.tsx        # página 404
-  sitemap.ts · robots.ts · icon.svg · globals.css
+  [lang]/              # localized layout, page and Open Graph image
+  sitemap.ts, robots.ts, global-not-found.tsx
 components/
-  layout/    Header, Footer, LanguageSwitcher, ThemeToggle
-  sections/  Hero, Services, Projects, About, Contact
-  ui/        primitivas, íconos de marcas, animación de scroll
-config/site.ts                # datos y enlaces
-lib/i18n.ts                   # idiomas y carga de textos
-messages/                     # textos es / en
-public/                       # imágenes y PDFs
+  layout/              # header, footer, language and theme switchers
+  sections/            # hero, services, projects, about, contact
+  ui/                  # shared primitives and icons
+config/site.ts         # contact info, project links and tech stack
+lib/i18n.ts            # locale helpers
+messages/              # es.json, en.json
+public/                # images and résumé PDFs
 ```
 
-## Desplegar en Vercel
+## License
 
-1. Sube el repositorio a GitHub (ver abajo).
-2. En [vercel.com/new](https://vercel.com/new), importa el repositorio. Vercel detecta Next.js solo; no cambies nada del build.
-3. En **Environment Variables** agrega:
-   - `NEXT_PUBLIC_SITE_URL` = la URL final del sitio, sin `/` al final (ej. `https://tudominio.com`).
-   Se usa para las URLs canónicas, el sitemap y las imágenes de Open Graph.
-4. Haz clic en **Deploy**.
-5. Cada `git push` a `main` vuelve a desplegar automáticamente.
-
-### Dominio propio
-
-1. En Vercel: **Project → Settings → Domains → Add** y escribe tu dominio (ej. `tudominio.com`). Agrega también `www.tudominio.com` y configúralo para redirigir al dominio principal.
-2. En el panel de tu proveedor de dominio (GoDaddy, Namecheap, Cloudflare, etc.) crea los registros DNS que Vercel te muestre. Normalmente son:
-   - `A` para `@` → la IP que indique Vercel
-   - `CNAME` para `www` → el valor que indique Vercel
-3. Espera a que Vercel marque el dominio como válido (de minutos a pocas horas). El certificado HTTPS se genera automáticamente.
-4. Actualiza `NEXT_PUBLIC_SITE_URL` con el dominio final y vuelve a desplegar (**Deployments → ⋯ → Redeploy**).
+© Maximiliano Muñoz López. All rights reserved.
